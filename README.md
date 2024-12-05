@@ -92,6 +92,25 @@ As imagens abaixo mostram a utilização de Excel e Power BI no projeto. Essas f
 <img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/264e7c76-a970-4d10-b458-94f2403c3f6d">
 <hr> 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr> 
+
 ## 📝 Observação
 
 Este projeto foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) no SENAI, com foco na criação de um sistema eficiente e acessível para monitoramento de umidade do solo e condições climáticas. Ele pode ser utilizado em soluções de irrigação automatizada, promovendo economia de água e maior eficiência no cultivo. 🎓
