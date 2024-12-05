@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="./script" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scriptlogin.js"></script>
+    <title>Login</title>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.2);
+        }
+        
+        .navbar-logo {
+            display: block;
+            margin: 0 auto;
+            width: 130px;
+            padding-top: 30px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* Adiciona alinhamento vertical */
+            height: 100vh;
+            background-color: #f4f4f9;
+            background-size: cover;
+            background: url(images/imagem\ 7.png) fixed center;
+            overflow: hidden;
+        }
+        
+        .video-section {
+            background: url(images/telafundo.jpeg) no-repeat fixed center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        .login-container {
+            overflow-y: scroll;
+            margin-top: 20px;
+            /* Ajusta o espaçamento superior */
+            width: 400px;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .login-container h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .textfield {
+            width: 100%;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .textfield label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .textfield input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            margin-bottom: 15px;
+        }
+        
+        .textfield input:focus {
+            border-color: #0066cc;
+        }
+        
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-login:hover {
+            background-color: #218838;
+        }
+        
+        .signup-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .signup-link a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+        
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        
+        nav button {
+            background: #145ed3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        nav button:hover {
+            background-color: #145ed3;
+        }
+        
+        .voltar {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        
+        .voltar a {
+            color: #145ed3;
+            text-decoration: none;
+        }
+        
+        .voltar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo centralizado acima do contêiner -->
+    <a class="navbar-brand navbar-logo" href="index.html">
+        <img src="images/iconhome.png" alt="logo" />
+    </a>
+
+    <!-- Contêiner de Login centralizado -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="textfield">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu Username" />
+            <label for="password">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha" />
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <p class="signup-link">
+            Não tem uma conta? <a href="Cadastro.html">Cadastre-se</a>
+            <br>
+            <a href="index.html">Voltar para a página anterior</a>
+        </p>
+    </div>
+
+    <script>
+        document.querySelector('.btn-login').addEventListener('click', () => {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('senha').value.trim();
+
+            if (username && password) {
+                // Armazena que o usuário está logado
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('username', username); // Opcional: salva o nome do usuário
+                alert(`Bem-vindo, ${username}!`);
+
+            } else {
+                alert("Por favor, preencha os campos de username e senha.");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
