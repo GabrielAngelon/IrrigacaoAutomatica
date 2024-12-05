@@ -1,0 +1,175 @@
+/*const Login = document.querySelector(".deletar");
+const Inome = document.querySelector(".nome");
+const Iemail = document.querySelector(".email");
+const Isenha = document.querySelector(".senha");
+const Iuser = document.querySelector(".user");
+const Ifone = document.querySelector(".fone");
+const Iid = document.querySelector(".id");
+const Atualizar = document.querySelector('.atualizar');
+
+function pesquisar() {
+    const id = Iid.value;
+    if (!id) {
+        console.error('ID não fornecido');
+        return;
+    }
+    fetch(`http://localhost:8080/irrigacao/user/${Iid}`, {
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            method: "GET",
+        })
+        .then(response => response.json())
+        .then(data => {
+            Inome.value = data.nome || "";
+            Iemail.value = data.email || "";
+            Isenha.value = data.senha || "";
+            Iuser.value = data.username || "";
+            Iid.value = data.id || "";
+            console.log('Usuário pesquisado:', data);
+        })
+        .catch(error => console.error('Erro ao pesquisar usuário:', error));
+};
+
+function deleteUser() {
+    const id = Iid.value; // Captura o ID do usuário a ser excluído
+    if (!id) {
+        console.error('ID não fornecido');
+        return;
+    }
+
+    fetch(`http://localhost:8080/irrigacao/user/${id}`, { // Corrigido para usar o id corretamente
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            method: "DELETE", // Método DELETE
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log('Usuário excluído com sucesso');
+                // Aqui você pode adicionar lógica para atualizar a UI ou limpar os campos
+                // Por exemplo, você pode limpar os campos de entrada:
+                Inome.value = "";
+                Iemail.value = "";
+                Isenha.value = "";
+                Iuser.value = "";
+
+            } else {
+                throw new Error('Erro ao excluir usuário: ' + response.status);
+            }
+        })
+        .catch(error => console.error('Erro ao excluir usuário:', error));
+};
+
+function login() {
+    const username = Iuser.value; // Captura o valor do input de username
+    const password = Isenha.value; // Captura o valor do input de senha
+
+    // Verifica se o username e a senha foram fornecidos
+    if (!username || !password) {
+        console.error('Username ou senha não fornecidos');
+        return;
+    }
+
+    // Cria o objeto com as credenciais de login
+    const credentials = {
+        username: username,
+        password: password
+    };
+
+    // Faz a requisição de login
+    fetch("http://localhost:8080/irrigacao/login", {
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            method: "POST",
+            body: JSON.stringify(credentials) // Envia as credenciais como JSON
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Falha no login: credenciais inválidas');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Login realizado com sucesso:', data);
+            // Aqui você pode redirecionar o usuário ou realizar outras ações
+            // Exemplo: armazenar dados no localStorage, redirecionar para outra página, etc.
+        })
+        .catch(error => console.error('Erro ao fazer login:', error));
+}
+
+function atualizar() {
+    const id = Iid.value;
+    if (!id) {
+        console.error('ID não fornecido');
+        return;
+    }
+
+    // Cria o objeto com os dados atualizados que serão enviados na requisição
+    const usuarioAtualizado = {
+        nome: Inome.value,
+        username: Iuser.value,
+        email: Iemail.value,
+        senha: Isenha.value,
+        fone: Ifone.value
+    };
+
+    // Faz a requisição PUT para atualizar o usuário
+    fetch(`http://localhost:8080/irrigacao/user/${id}`, {
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            method: "PUT",
+            body: JSON.stringify(usuarioAtualizado) // Envia os dados como JSON
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Erro ao atualizar usuário');
+            }
+        })
+        .then(data => {
+            console.log('Usuário atualizado com sucesso:', data);
+            // Você pode atualizar os campos na página, se necessário
+        })
+        .catch(error => console.error('Erro ao atualizar usuário:', error));
+}
+
+function getUsuario() {
+    const id = IidGet.value; // Captura o ID do input
+    if (!id) {
+        console.error('ID não fornecido');
+        return;
+    }
+
+    // Faz a requisição GET para obter os dados do usuário
+    fetch(`http://localhost:8080/irrigacao/user/${username}`, {
+            method: "GET",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao obter usuário');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Usuário obtido com sucesso:', data);
+            mostrarUsuario(data); // Mostra as informações do usuário
+        })
+        .catch(error => console.error('Erro ao obter usuário:', error));
+}
+
+Login.addEventListener('click', function() {
+    login();
+    //limpar();
+});*/

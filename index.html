@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Irrigação Automática</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- botoes scroll start -->
+    <!--        <p class="pclass">Já tem uma conta? Faça o <a href="Login.html">Login</a></p>
+-->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand navbar-logo" href="#">
+                <img src="images/logo.png" alt="logo" class="logo-1" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-scroll-nav="0">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="1">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="2">Arduino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="3">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="4">Equipamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="5">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="6">Perguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="7">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cadastro.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- botoes scroll end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------Tela inicial start------->
+    <section class="banner" data-scroll-index="0">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="banner-text">
+                            <h2 class="white">Natural Tec-One</h2>
+                            <p class="banner-text white">
+                                Equipamento de irrigação automática inteligente com uma conexão ao nosso banco de dados que podem ser modificados direto do seu dispositivo. Tenha acesso a relatórios e estatísticas detalhadas e ajustes fáceis, sem a necessidade de estar presente no local.
+                                Basta acessar o aplicativo e observar os sensores e a mágica.
+                                <br> <br> A flexibilidade da nossa solução permite uma adaptação a diferentes climas, necessidades e condições do solo. Além disso, o sistema é de fácil instalação/escalação e compatível com outras plataformas, garantindo
+                                uma experiência tranquila desde o primeiro uso.
+                            </p>
+                            <!--   <ul>
+                                <li>
+                                    <a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <img src="images/naturalTecPhone0.png" class="img-fluid wow fadeInUp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <span class="svg-wave">                                ESSA É A ONDINHA
+        <img class="svg-hero" src="images/applight-wave.svg" />
+      </span>-->
+    </section>
+
+    <!-------Tela inicial final------->
+
+
+
+
+
+
+
+
+
+
+
+    <!-------"Sobre" Start------->
+
+    <section class="about section-padding prelative" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center">
+                        <h3>Sobre</h3>
+                        <span class="line"></span>
+                        <p>
+                            Nossa missão é tornar o gerenciamento de sistemas de irrigação mais inteligente, eficiente e acessível. Utilizando a conectividade via Wi-Fi e a capacidade de customização, oferecemos soluções que se adaptam às necessidades de diversos tipos de cultivos
+                            e ambientes, proporcionando praticidade e controle completo na palma da sua mão.
+                        </p>
+                    </div>
+                    <div class="section-content text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                                    <h5>Diversos dispositivos por WiFi</h5>
+                                    <p>
+                                        Controle todo o sistema de irrigação diretamente pelo seu celular ou outros dispositivos conectados via Wi-Fi e apps, tornando o processo de irrigação muito mais prático.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                    <h5>Customização/Escabilidade</h5>
+                                    <p>
+                                        Pode-se implementar funcionalidades adicionais desejadas como ativação por voz com um sensor de som, ou conexão a previsão do tempo. Podendo ser customizado de acordo com o tamanho do jardim ou horta. Desde as pequenas e grandes plantações, reparos e
+                                        aumento/reforço de seus sistemas de irrigação são facéis de implementar. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon-box wow fadeInUp" data-wow-delay="0.6s">
+                                    <i class="fa fa-hdd" aria-hidden="true"></i>
+                                    <h5>Armazenamento</h5>
+                                    <p>
+                                        Nosso sistema utiliza sensores de umidade, temperatura e chuva para fornecer dados capturados, informações de sensores são salvas e pode-se ver estatisticas de dias passados
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="about-btn">Veja mais!</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------"Sobre" Start------->
+
+    <!-------Video Start----
+    <section class="video-section prelative text-center white">
+        <div class="section-padding video-overlay">
+            <div class="container">
+                <h3>Assiste no YouTube</h3>
+                <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
+                <div class="video-popup">
+                    <div class="video-src">
+                        <div class="iframe-src">
+                            <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>--->
+    <!-------Video End------->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------Arduino Start------->
+    <section class="feature section-padding" data-scroll-index="2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center">
+                        <h3>Benefícios do Arduino</h3>
+                        <span class="line"></span>
+                        <p>
+                            O Arduino é uma plataforma versátil que permite a criação de soluções inteligentes e acessíveis. Com uma ampla compatibilidade de componentes e funcionalidades, ele é ideal para projetos personalizados em diversos ambientes, como automação e sistemas
+                            de controle.
+                        </p>
+                    </div>
+                    <div class="section-content text-center">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="media-body text-right media-right-margin">
+                                        <h5>Processamento Rápido</h5>
+                                        <p>
+                                            O Arduino executa comandos rapidamente, garantindo respostas eficientes e tempo de processamento ideal para automação de tarefas.
+                                        </p>
+                                    </div>
+                                    <div class="media-right icon-border">
+                                        <span class="fa fa-bolt" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="media-body text-right media-right-margin">
+                                        <h5>Baixo Consumo de Energia</h5>
+                                        <p>
+                                            Projetado para ser eficiente em termos de consumo de energia, o Arduino é perfeito para soluções que precisam de funcionamento contínuo sem gastar muita energia.
+                                        </p>
+                                    </div>
+                                    <div class="media-right icon-border">
+                                        <span class="fa fa-battery-full" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="media-body text-right media-right-margin">
+                                        <h5>Compatibilidade com Wi-Fi</h5>
+                                        <p>
+                                            Com suporte a módulos de Wi-Fi, o Arduino facilita a criação de dispositivos conectados, permitindo o controle remoto de sistemas, como automação residencial e industrial.
+                                        </p>
+                                    </div>
+                                    <div class="media-right icon-border">
+                                        <span class="fa fa-wifi" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-none d-md-block d-lg-block">
+                                <div class="feature-mobile d-flex align-items-center justify-content-center" style="height: 100%;">
+                                    <img src="images/esp32.png" class="img-fluid wow fadeInUp" style="max-height: 50%; margin-top: 10%;" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="media-left icon-border media-right-margin">
+                                        <span class="fa fa-check-double" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="media-body text-left">
+                                        <h5>Atualizações Constantes</h5>
+                                        <p>
+                                            A comunidade do Arduino está sempre crescendo e trazendo inovações, garantindo que seu projeto possa evoluir e se adaptar a novas tecnologias e demandas.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="media-left icon-border media-right-margin">
+                                        <span class="fa fa-dollar-sign" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="media-body text-left">
+                                        <h5>Custo-Benefício</h5>
+                                        <p>
+                                            O Arduino oferece uma plataforma de baixo custo que possibilita a criação de projetos complexos sem a necessidade de grandes investimentos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="media-left icon-border media-right-margin">
+                                        <span class="fa fa-hdd" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="media-body text-left">
+                                        <h5>Soluções Inteligentes</h5>
+                                        <p>
+                                            Com capacidade para implementar medidas automáticas e preventivas, o Arduino permite customizar soluções de acordo com as necessidades específicas do seu projeto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------Arduino end------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------Team Start------->
+    <section class="team section-padding" data-scroll-index="3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center">
+                        <h3>Nosso Time</h3>
+                        <span class="line"></span>
+                        <p>
+                            Conheça o time por trás do projeto de irrigação automática do SENAI! Com uma combinação única de habilidades técnicas e dedicação, nossos desenvolvedores entregam soluções inovadoras e funcionais. Cada integrante traz uma expertise específica, garantindo
+                            que o produto final seja confiável e eficiente.
+                        </p>
+                    </div>
+                    <div class="section-content text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="team-detail wow bounce" data-wow-delay="0.10s">
+                                    <img src="images/fotoGab.jpg" class="img-fluid" />
+                                    <img src="" class="img-fluid" />
+                                    <h4>Gabriel Angelon</h4>
+                                    <p>Back-end Desenvolvedor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-detail wow bounce" data-wow-delay="0.30s">
+                                    <img src="images/fotomariac.png" class="img-fluid" />
+                                    <h4>Maria Clara</h4>
+                                    <p>Back-end Developer</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-detail wow bounce" data-wow-delay="0.50s">
+                                    <img src="images/FotoBorella.jpg" class="img-fluid" />
+                                    <h4>Sophia Borella</h4>
+                                    <p>Gerenciamento</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-detail wow bounce" data-wow-delay="0.70s">
+                                    <img src="images/FotoPedro.jpg" class="img-fluid" />
+                                    <h4>Pedro Henrique</h4>
+                                    <p>Front-end Desenvolvedor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-detail wow bounce" data-wow-delay="0.80s">
+                                    <img src="images/FotoMariEdu.jpg" class="img-fluid" />
+                                    <h4>Maria Eduarda</h4>
+                                    <p>Documentação Projeto</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="team-detail wow bounce" data-wow-delay="1.10s">
+                                    <img src="images/FotoIsa.jpg" class="img-fluid" />
+                                    <h4>Isabela Vedovello</h4>
+                                    <p>Documentação Projeto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------Team End------->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------Produtos arduino Start------->
+    <section class="testimonial section-padding" data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center white">
+                        <h3>Equipamento</h3>
+                        <span class="line"></span>
+                        <p class="white">
+                            Com todos esses componentes integrados, você terá um sistema de irrigação automático inteligente, capaz de monitorar as condições do solo e do ambiente, se conectar à internet e ser controlado remotamente, além de fornecer feedback visual.
+                        </p>
+                    </div>
+
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="offset-md-2 col-md-8 col-sm-12">
+                                <div class="slider">
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/Arduino.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Arduino Uno SMD</span> </span>Modo principal para receber informações de sensores e outros, assim como mandar comandos.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/adaptador.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Adaptador para Módulo WiFi ESP8266 ESP-01</span>
+                                            </span>Adaptador para o ESP8266 conseguir conectar com a internet.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/esp01.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Módulo WiFi - ESP8266</span> </span>Conseguir conexões com a internet e para o app.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/displaylcd.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Display LCD 16x2 I2C</span> </span>Mostrar informações da umidade do solo.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/junpers.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Jumper para Protoboard Fêmea-Fêmea, Macho-Macho e
+                                                    Macho-Fêmea
+                                                </span> </span>Fazer as conexões físicas.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/protoboard.jpg" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Protoboard 830 pontos</span> </span>Criar linhas de conexões físicas.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/Buzzer.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Buzzer Ativo 3,3V Bip Contínuo PCI</span>
+                                            </span>Faz um apito para identificar a chuva.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/Chuva.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Sensor de Chuva Arduino FC37</span>
+                                            </span>Identificar se está chovendo.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/SensorUmid.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Módulo Sensor de Umidade do Solo</span>
+                                            </span>Identificar a umidade do solo.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/SensorTemp.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Módulo Sensor de Umidade e Temperatura DHT11 do
+                                                    ar</span> </span>Identificar a umidade e temperatura do ar.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/RealTime.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Módulo Relógio Tempo Real RT</span> </span>Marcar o tempo real.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/Rele.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Módulo Relé 3.3v</span> </span>Abrir e fechar a válvula solenoide.
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="test-img">
+                                            <img src="./images/leds.png" alt="Placeholder" width="157" height="157" />
+                                        </div>
+                                        <div class="test-text">
+                                            <span class="title"><span>Leds</span> </span>Acender e mostrar como está a umidade da água.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---->
+
+    <!-------Produtos arduino End---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------Kits Arduino start------->
+    <!-- Pricing Plan Start -->
+    <section class="" data-scroll-index="5">
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="sectioner-header text-center">
+                    <h3>Compras</h3>
+                    <span class="line"></span>
+                </div>
+                <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                    <!-- Aqui vai o conteúdo adicional que você deseja adicionar, como ícones ou outras informações -->
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <div class="bg-light text-center pt-5 mt-lg-5">
+                            <h2 class="text-uppercase">Basico</h2>
+                            <h6 class="text-body mb-5">O mais vendido</h6>
+                            <img src="./images/imgcompras.png" alt="">
+                            <br> <br> <br>
+
+                            <div class="text-center bg-primary p-4 mb-2">
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>49<small class="align-bottom" style="font-size: 16px; line-height: 40px;">.99</small>
+                                </h1>
+                            </div>
+                            <div class="text-center p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- ESP32</span>
+                                    <i class="bi bi-check2 fs-4 text-primary"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de umidade do solo</span>
+                                    <i class="bi bi-check2 fs-4 text-primary"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Módulo relé</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Válvula solenoide</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <a href="descProd0.html?tamanho2=basico" class="btn btn-primary text-uppercase py-2 px-4 my-3">Compre agora</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-light text-center pt-5">
+                            <h2 class="text-uppercase">Completo</h2>
+                            <h6 class="text-body mb-5">Melhor custo benefício</h6>
+                            <img src="./images/imgcompras.png" alt="">
+                            <br> <br> <br>
+                            <div class="text-center bg-dark p-4 mb-2">
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>149<small class="align-bottom" style="font-size: 16px; line-height: 40px;">.99</small>
+                                </h1>
+                            </div>
+                            <div class="text-center p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- ESP32</span>
+                                    <i class="bi bi-check2 fs-4 text-primary"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de umidade do solo</span>
+                                    <i class="bi bi-check2 fs-4 text-primary"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de umidade do ar</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de chuva</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de temperatura</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Módulo relé</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Display LCD I2C</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Válvula solenoide</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Módulo Wifi</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+
+
+
+                                <a href="descProd1.html?tamanho2=completo" class="btn btn-primary text-uppercase py-2 px-4 my-3">Compre agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-light text-center pt-5 mt-lg-5">
+                            <h2 class="text-uppercase">Avançado</h2>
+                            <h6 class="text-body mb-5">Uma melhoria</h6>
+                            <img src="./images/imgcompras.png" alt="">
+                            <br> <br> <br>
+                            <div class="text-center bg-primary p-4 mb-2">
+                                <h1 class="display-4 text-white mb-0">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>99<small class="align-bottom" style="font-size: 16px; line-height: 40px;">.99</small>
+                                </h1>
+                            </div>
+                            <div class="text-center p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- ESP32</span>
+                                    <i class="bi bi-check2 fs-4 text-primary"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de umidade do solo</span>
+                                    <i class="bi bi-check2 fs-4 text-primary"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Sensor de temperatura</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Módulo relé</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Válvula solenoide</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-1">
+                                    <span>- Módulo Wifi</span>
+                                    <i class="bi bi-x fs-4 text-danger"></i>
+                                </div>
+                                <a href="descProd2.html?tamanho2=avancado" class="btn btn-primary text-uppercase py-2 px-4 my-3">Compre agora</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------Kits Arduino End------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-------Perguntas Start------->
+        <section class="faq section-padding prelative" data-scroll-index="6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h3>Perguntas Frequentes</h3>
+                            <span class="line"></span>
+                            <p>
+                                Aqui estão algumas das perguntas mais comuns sobre o sistema de irrigação.
+                            </p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>O que acontece se chover enquanto o sistema está programado para irrigar?</h4>
+                                    <p>
+                                        O sistema irá desligar automaticamente se detectar umidade ou chuva.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>Quais são os custos de operação do sistema?</h4>
+                                    <p>
+                                        Os custos variam, mas em geral são baixos, dependendo do uso da água e da energia.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                    <h4>Posso conectar o sistema a outros dispositivos?</h4>
+                                    <p>
+                                        Sim, o sistema pode ser integrado a outros dispositivos inteligentes.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                    <h4>O que preciso para instalar o sistema no meu jardim?</h4>
+                                    <p>
+                                        Você precisará de um espaço para o sistema e de acesso à água e energia elétrica.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                    <h4>O que acontece em caso de falta de energia?</h4>
+                                    <p>
+                                        O sistema pode ficar inativo até que a energia seja restaurada, mas mantém as programações. Porem pode ser adaptado uma bateria externa para que possa ser mantido mesmo sem energia!
+                                    </p>
+                                </div>
+                                <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                    <h4>O sistema precisa de manutenção regular?</h4>
+                                    <p>
+                                        Não necessariamente, porem é recomendado verificar os componentes regularmente para garantir o perfeito funcionamento do sistema.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------Perguntas End------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-------Contact Start------->
+
+        <section class="contact section-padding" data-scroll-index="7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="sectioner-header text-center">
+                            <h3>Contate-nos</h3>
+                            <span class="line"></span>
+                            <p>
+                                Se você tiver dúvidas ou precisar de suporte, estamos aqui para ajudar. Preencha o formulário abaixo e nossa equipe entrará em contato com você o mais rápido possível. </p>
+                        </div>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-8">
+                                    <form id="contact_form" action="https://formspree.io/f/xvgpybqz" method="post">
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Nome completo" required />
+                                            </div>
+                                            <div class="col">
+                                                <input type="email" id="email" class="form-input w-100" name="email" placeholder="Seu E-mail" required />
+                                            </div>
+                                        </div>
+                                        <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Assunto" />
+                                        <textarea class="form-input w-100" id="message" placeholder="Mensagem" name="message"></textarea>
+                                        <button class="btn-grad w-100 text-uppercase" type="submit" name="button">
+                                        ENVIAR
+                                    </button>
+                                    </form>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-4">
+                                    <div class="contact-info white">
+                                        <div class="contact-item media">
+                                            <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">Address</p>
+                                                <p class="text-uppercase">
+                                                    R. Alfredo Massareti, 191 - Lot. Rei de Ouro, Itatiba - SP, 13251-360
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item media">
+                                            <i class="fa fa-mobile media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">Phone</p>
+                                                <p class="text-uppercase">
+                                                    <a class="text-white" href="tel:+15173977100">+55 (11)99999-9999</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item media">
+                                            <i class="fa fa-envelope media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">E-mail</p>
+                                                <p class="text-uppercase">
+                                                    <a class="text-white" href="mailto:abcdefg@gmail.com">naturaltecone@gmail.com</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item media">
+                                            <i class="fa fa-clock media-left media-right-margin"></i>
+                                            <div class="media-body">
+                                                <p class="text-uppercase">Horário de funcionamento</p>
+                                                <p class="text-uppercase">Segunda a sexta 09:00 as 15:00.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <fieldset>
+
+        </fieldset>
+
+        <!-------Contact End------->
+
+        <!-------Download Start----
+    <section class="download section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center white">
+                        <h3>Baixe o aplicativo</h3>
+                        <span class="line"></span>
+                        <p class="white">
+                            O aplicativo é utilizado para aplicar o nosso projeto, não é necessariamente obrigatório, se sinta livre para pesquisar mias sobre o aplicativo!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="section-content text-center">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+--->
+        <!-------Download End------->
+
+        <footer class="footer-copy">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <!-- scrollIt js start -->
+        <script src="js/scrollIt.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            wow = new WOW();
+            wow.init();
+            $(document).ready(function(e) {
+                $("#video-icon").on("click", function(e) {
+                    e.preventDefault();
+                    $(".video-popup").css("display", "flex");
+                    $(".iframe-src").slideDown();
+                });
+                $(".video-popup").on("click", function(e) {
+                    var $target = e.target.nodeName;
+                    var video_src = $(this).find("iframe").attr("src");
+                    if ($target != "IFRAME") {
+                        $(".video-popup").fadeOut();
+                        $(".iframe-src").slideUp();
+                        $(".video-popup iframe").attr("src", " ");
+                        $(".video-popup iframe").attr("src", video_src);
+                    }
+                });
+
+                $(".slider").bxSlider({
+                    pager: false,
+                });
+            });
+
+            $(window).on("scroll", function() {
+                var bodyScroll = $(window).scrollTop(),
+                    navbar = $(".navbar");
+
+                if (bodyScroll > 50) {
+                    $(".navbar-logo img").attr(
+                        "src",
+                        "images/tecone logo cor fundo.png"
+                    ); /*logo black*/
+                    navbar.addClass("nav-scroll");
+                } else {
+                    $(".navbar-logo img").attr("src", "images/ntologo preto sem fundo.png"); /*logo*/
+                    navbar.removeClass("nav-scroll");
+                }
+            });
+            $(window).on("load", function() {
+                var bodyScroll = $(window).scrollTop(),
+                    navbar = $(".navbar");
+
+                if (bodyScroll > 50) {
+                    $(".navbar-logo img").attr("src", "images/logo-black.png");
+                    navbar.addClass("nav-scroll");
+                } else {
+                    $(".navbar-logo img").attr("src", "images/logo-white.png");
+                    navbar.removeClass("nav-scroll");
+                }
+
+                $.scrollIt({
+                    easing: "swing", // the easing function for animation
+                    scrollTime: 900, // how long (in ms) the animation takes
+                    activeClass: "active", // class given to the active nav element
+                    onPageChange: null, // function(pageIndex) that is called when page is changed
+                    topOffset: -63,
+                });
+            });
+        </script>
+
+        <!-- scrollIt js end -->
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scriptcadastro.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<style>
+    /* CSS para o logo */
+    
+    img {
+        width: 100%;
+        /* A imagem ocupa 100% da largura do contêiner */
+        height: auto;
+        /* A altura é ajustada automaticamente para manter a proporção */
+        transition: transform 0.3s ease;
+        /* Animação para escala */
+    }
+    /* Exemplo de aumentar a imagem quando passar o mouse */
+    
+    img:hover {
+        transform: scale(1.2);
+        /* Aumenta a imagem em 20% ao passar o mouse */
+    }
+    
+    .navbar-logo {
+        display: block;
+        margin: 0 auto;
+        /* Centraliza o logo horizontalmente */
+        width: 130px;
+        /* Define o tamanho fixo do logo */
+        padding-top: 30px;
+        /* Espaçamento superior para dar um espaço agradável */
+    }
+    
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* Alinha os itens verticalmente */
+        height: 100vh;
+        background-color: #f4f4f9;
+        background-size: cover;
+        background: url(images/imagem\ 7.png) fixed center;
+        overflow: hidden;
+    }
+    
+    .video-section {
+        background: url(images/telafundo.jpeg) no-repeat fixed center;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .btn-cadas {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cadastrar-container {
+        overflow-y: scroll;
+        margin-top: 50px;
+        /* Aumenta o espaçamento superior */
+        margin-bottom: 50px;
+        /* Aumenta o espaçamento inferior */
+        width: 400px;
+        height: auto;
+        /* Remove a altura fixa para permitir mais espaço vertical */
+        padding: 40px;
+        /* Aumenta o padding para mais espaço interno */
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Garante espaçamento entre os campos */
+    }
+    
+    .cadastrar-container h2 {
+        margin-bottom: 30px;
+        /* Aumenta o espaço abaixo do título */
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .textfield {
+        width: 100%;
+        margin-bottom: 25px;
+        /* Aumenta o espaço entre os campos */
+        text-align: left;
+    }
+    
+    .textfield label {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 8px;
+        display: block;
+    }
+    
+    .textfield input {
+        width: 100%;
+        padding: 12px;
+        /* Aumenta o espaçamento interno dos campos */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        margin-bottom: 15px;
+        /* Adiciona mais espaçamento entre os campos */
+    }
+    
+    .textfield input:focus {
+        border-color: #0066cc;
+    }
+    
+    .btn-cadastrar {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-cadastrar:hover {
+        background-color: #218838;
+    }
+    
+    .signup-link {
+        display: block;
+        margin-top: 30px;
+        /* Aumenta o espaçamento superior */
+        font-size: 14px;
+    }
+    
+    .signup-link a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+    
+    .signup-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+
+    <!-- Logo centralizado -->
+    <a class="navbar-brand navbar-logo" href="index.html">
+        <img src="images/iconhome.png" alt="logo" class="" />
+    </a>
+
+    <!-- Formulário de cadastro -->
+    <div class="cadastrar-container">
+        <h2>Cadastro</h2>
+
+        <div class="textfield">
+            <label for="name">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" />
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu Username" />
+            <label for="E-mail">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-mail" />
+            <label for="password">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha" />
+            <label for="Phone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite sua Telefone" />
+            <label for="Endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço" />
+        </div>
+
+        <button type="submit" id="cadastrar" class="btn-cadastrar">Cadastrar</button>
+
+        <p class="signup-link">Já tem uma conta? <a href="Login.html">Login</a></p>
+        <br>
+        <a href="javascript:history.back()">Voltar para a página anterior</a>
+
+    </div>
+
+</body>
+
+</html>

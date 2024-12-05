@@ -1,0 +1,24 @@
+RALCOMP. Arduino Uno [imagem]. Disponível em: https://www.ralcomp.com.br/produto/arduino-uno/. Acesso em: 3 set. 2024.
+
+INSTITUTO DIGITAL. Módulo Relé 1 canal 5V sem acoplador óptico [produto]. Instituto Digital. Disponível em: https://www.institutodigital.com.br/produto/modulo-rele-1-canal-5v-sem-acoplador-optico/. Acesso em: 3 set. 2024.
+
+MAKER HERO. Sensor de umidade do solo (higrômetro) [produto]. Maker Hero. Disponível em: https://www.makerhero.com/produto/sensor-de-umidade-do-solo-higrometro/. Acesso em: 3 set. 2024.
+
+USINAINFO. Adaptador para módulo WiFi ESP8266 ESP-01 (3.3V/5V) [produto]. UsinaInfo. Disponível em: https://www.usinainfo.com.br/esp8266/adaptador-para-modulo-wifi-esp8266-esp-01-33v-5v-5760.html. Acesso em: 3 set. 2024.
+
+ROBOCORE. Módulo WiFi ESP8266 [produto]. Robocore. Disponível em: https://www.robocore.net/wifi/modulo-wifi-esp8266. Acesso em: [data de acesso]. Acesso em: 3 set. 2024.
+
+NOVATRONIC. Módulo DS3231 de tempo real (RTC) com bateria [produto]. Novatronic. Disponível em: https://novatronicec.com/index.php/product/modulo-ds3231-de-tiempo-real-rtc-con-bateria/. Acesso em: 3 set. 2024.
+
+USINAINFO. Sensor de chuva para Arduino FC37 - Módulo de leitura [produto]. UsinaInfo. Disponível em: https://www.usinainfo.com.br/outros-sensores-arduino/sensor-de-chuva-arduino-fc37-modulo-de-leitura-2579.html. Acesso em: [data de acesso]. Acesso em: 3 set. 2024.
+
+FECOMP. Módulo sensor de umidade e temperatura DHT11 [produto]. Fecomp. Disponível em: https://www.fecomp.com.br/item/MODULO-SENSOR-DE-UMIDADE-E-TEMPERATURA-DHT11.html. Acesso em: 3 set. 2024.
+
+MÓDULO DISPLAY 16x2. Módulo Display 16x2 com Comunicação I2C para Arduino [produto]. Amazon Brasil. Disponível em: https://www.amazon.com.br/M%C3%B3dulo-Display-16x2-Comunica%C3%A7%C3%A3o-Arduino/dp/B07GJ28LMV. Acesso em: 3 set. 2024.
+
+USINAINFO. Módulo buzzer ativo 3V a 5V BP19-5831. UsinaInfo. Disponível em: https://www.usinainfo.com.br/buzzer-arduino/modulo-buzzer-ativo-33v-a-5v-bp19-5831.html. Acesso em: 3 set. 2024.
+
+ELETROPARTS COMPONENTES. Protoboard 400 furos. Eletroparts Componentes. Disponível em: https://www.eletropartscomponentes.com.br/produto/protoboard-400-furos/. Acesso em: 3 set. 2024.
+
+SPARKFUN. SparkFun USB to Serial Breakout - FTDI Chip (USB-232) [produto]. SparkFun. Disponível em: https://www.sparkfun.com/products/11026.  Acesso em: 3 set. 2024.
+
