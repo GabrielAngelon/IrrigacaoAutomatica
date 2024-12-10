@@ -53,15 +53,23 @@ Com o objetivo de criar um sistema eficiente e acessível para o monitoramento d
 3. Controla o relé para ativar/desativar a irrigação com base nos níveis de umidade.
 4. Utiliza LEDs e um buzzer para fornecer feedback visual e sonoro.
 
----
+<hr> 
+
+**Exemplo da estrutura utilizando o Tinkercad**
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/6fe5e554-85c9-4a9d-906c-0db64bee52f7">
+<hr> 
 
 ## 📂 Estrutura do Projeto
 
 - `TCCSenai.pbix`: Arquivo do Power BI
 - `PlanilhaCsv.xlsx`: Arquivo Excel
 - `CodigoFinalArduino.ino`: Código do Arduino
+- `natural_tec_one_compra.sql`: Mysql tabela Compras
+- `natural_tec_one_funcionario.sql`: Mysql tabela Funcionarios
+- `natural_tec_one_tbluser.sql`: Mysql tabela Usuários
 
----
+<hr>
 
 ## 📊 Exemplos de Análises e Gráficos
 
@@ -87,6 +95,13 @@ As imagens abaixo mostram a utilização de Excel e Power BI no projeto. Essas f
 <hr> 
 <img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/264e7c76-a970-4d10-b458-94f2403c3f6d">
 <hr> 
+
+### 🚀 Implementação dos dados do Excel já no Mysql;
+
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/9ccc61c4-29ca-4ee1-b107-8b01e7ee7679">
+<hr> 
+
 
 ## 💧 Sistema de Irrigação Automatizado com Arduino e ESP32
 
@@ -238,7 +253,202 @@ Além disso, a página oferece um **canal de contato** com o suporte técnico, o
 <img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/1106cf51-59c5-4a2c-bb45-cd044e6be19c">
 <hr> 
 
-## 📝 Observação
+## 🗃️ **Banco de Dados MySQL**
+
+O sistema utiliza o banco de dados MySQL para armazenar e gerenciar informações essenciais dos usuários, funcionários e compras. Abaixo estão as principais tabelas do banco de dados e suas descrições:
+
+### 1. **Tabela Usuário**
+
+A tabela **`usuario`** armazena informações dos usuários registrados no sistema. Essas informações incluem dados pessoais e de contato.
+
+- **Campos:**
+  - `id_usuario`: Identificador único do usuário.
+  - `nome_user`: Nome completo do usuário.
+  - `username`: Username escolhido pelo usuário.
+  - `senha`: Senha do usuário (armazenada de forma segura).
+  - `email`: Endereço de e-mail do usuário.
+  - `fone`: Número de telefone do usuário.
+  - `endereco`: Endereço do usuário.
+
+<hr> 
+
+**Exemplo de Estrutura da Tabela Usuário**:
+
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/f4a4a9fc-2449-4b29-a389-d0834d099c1d">
+<hr> 
+
+### 2. **Tabela Funcionário**
+
+A tabela **`funcionario`** contém os dados dos funcionários que operam o sistema, incluindo informações sobre seu cargo e dados de contato.
+
+- **Campos:**
+  - `id_func`: Identificador único do funcionário.
+  - `nome_func`: Nome completo do funcionário.
+  - `funcao`: Função ou cargo do funcionário (Ex: Gerente, Atendente).
+
+<hr>
+
+**Exemplo de Estrutura da Tabela Funcionário**:
+
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/0f243839-e51b-4d3f-b73e-e82afe68f3c9">
+<hr> 
+
+### 3. **Tabela Compras**
+
+A tabela **`compras`** registra as compras realizadas pelos usuários, incluindo detalhes sobre o pedido, pagamento e o funcionário responsável pelo atendimento.
+
+- **Campos:**
+  - `id_compra`: Identificador único da compra.
+  - `tamanho`: Tamanho do kit comprado (Ex: Básico, Completo, Avançado).
+  - `area`: Área da irrigação (Ex: Horta, Jardim, Varanda).
+  - `quantidade`: Quantidade de itens comprados.
+  - `enderec`: Endereço de entrega da compra.
+  - `valor`: Valor total da compra.
+  - `metodo_pagamento`: Método de pagamento utilizado (Pix, Boleto, Cartão).
+  - `id_funcionario`: Identificador do funcionário que atendeu a compra.
+  - `nome_funcionario`: Nome do funcionário que atendeu a compra.
+  - `id_user`: Identificador do usuário que fez a compra.
+  - `nome_user`: Nome do usuário que fez a compra.
+  - `data_da_compra`: Data em que a compra foi realizada.
+
+<hr>
+
+**Exemplo de Estrutura da Tabela Compras**:
+
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/15dca7a2-f9cf-4034-b22d-9a7028b955e9">
+<hr> 
+
+### 🔄 **Relacionamentos entre as Tabelas**
+
+As tabelas `usuario`, `funcionario` e `compras` estão interligadas. A tabela `compras` faz referência aos `id_usuario` e `id_funcionario`, criando um vínculo entre os usuários que realizaram compras e os funcionários que os atenderam. Esse relacionamento permite que o sistema obtenha facilmente informações sobre quem comprou o quê, quem atendeu a compra e outros detalhes relevantes.
+
+<hr> 
+
+**Exemplo do relacionamento de tabelas**:
+
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/f6d77fd3-3ad5-40f2-be71-66949cb11f47">
+<hr> 
+
+### 📸 **Captura das Tabelas**
+
+Para visualização da estrutura das tabelas, abaixo estão as capturas de tela:
+
+<hr> 
+
+- **Tabela Usuário**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/17ff17bd-a100-4d83-94f6-19429776abe0">
+<hr> 
+
+- **Tabela Funcionário**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/a4893854-0481-48ba-a363-746cbbd422e2">
+<hr> 
+
+- **Tabela Compras**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/41951e65-b72b-435e-a3ae-4c409c3fe63b">
+<hr> 
+
+### 🖥️ **Uso do Eclipse no Projeto**
+
+O Eclipse foi a IDE escolhida para o desenvolvimento do backend do projeto, devido à sua interface amigável, robustez e suporte a ferramentas integradas, como Maven e Spring Boot. Com ele, foi possível organizar todas as camadas da aplicação, implementar funcionalidades e integrar o sistema ao banco de dados MySQL.
+
+<hr> 
+
+### 📂 **Organização do Projeto no Eclipse**
+
+O projeto foi estruturado em pacotes para facilitar a organização do código, como mostra a imagem abaixo:
+
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/78f0f889-4114-43a0-81b9-9d9a4a7f320b">
+<hr> 
+
+- **Controller:** Contém as classes responsáveis por gerenciar as rotas HTTP e a interação com o frontend.
+- **Model:** Classes que representam as tabelas do banco de dados, como `Usuario`, `Funcionario` e `Compra`.
+- **DAO (Data Access Object):** Realiza a comunicação direta com o banco de dados MySQL.
+- **Resources:** Contém configurações como o arquivo `application.properties`, que conecta a aplicação ao banco.
+
+<hr> 
+
+### 🔄 **Métodos HTTP Implementados**
+
+Dentro do Eclipse, foram criados métodos para realizar as operações CRUD (Get, Post, Put, Delete). Abaixo está um exemplo dos métodos da tabela de compras para exemplificação que busca compras por endereço:
+
+<hr> 
+
+- **Método Get**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/7b79fe9d-b5a1-450b-8808-58d4e2c8e4ab">
+<hr> 
+
+- **Método Post**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/6ac668bd-b43c-4bec-8811-dcde07d7982d">
+<hr> 
+
+- **Método Put**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/e6e2e3a2-bb72-403c-b88d-3d6b741c83f8">
+<hr> 
+
+- **Método Delete**:
+<hr> 
+<img width="379" alt="Captura de tela 2024-03-14 074016" src="https://github.com/user-attachments/assets/7abb0921-6409-4296-aa62-5f4122e63312">
+<hr> 
+
+### 🔗 **Configuração da Conexão com o Banco de Dados**
+
+A conexão com o banco de dados MySQL foi configurada no arquivo `application.properties`, garantindo que a aplicação Spring Boot consiga acessar e gerenciar os dados do sistema.
+
+<hr>
+
+### 🛠️ **Detalhes da Configuração**
+
+```java
+# Nome da aplicação
+spring.application.name=Irrigacao
+
+# Credenciais de acesso ao banco de dados
+spring.datasource.username=root
+spring.datasource.password=******
+
+# URL do banco de dados
+spring.datasource.url=jdbc:mysql://localhost:3306/natural_tec_one?useTimezone=true&serverTimezone=UTC
+
+# Dialeto do banco utilizado pelo Hibernate
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+```
+
+<hr>
+
+### 🔍 **Descrição dos Campos**
+
+- **Nome da Aplicação**  
+  Define o nome do projeto como "Irrigacao" para identificação nos logs e no gerenciamento interno.
+
+- **Credenciais**  
+  - `spring.datasource.username`: Usuário do banco (no exemplo, *root*).  
+  - `spring.datasource.password`: Senha do banco, mantida protegida por motivos de segurança.
+
+- **URL do Banco de Dados**  
+  Configura o endereço de conexão com o banco MySQL:
+  - **Host**: `localhost`
+  - **Porta**: `3306`
+  - **Nome do Banco**: `natural_tec_one`
+  - **Parâmetros**: Configurações como timezone para evitar inconsistências de data e hora.
+
+- **Dialeto do Hibernate**  
+  Define o dialeto para que o Hibernate gere queries compatíveis com MySQL 8.
+
+<hr>
+
+### 📝 Observação
 
 Este projeto foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) no SENAI 🎓
 
